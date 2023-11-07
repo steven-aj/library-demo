@@ -1,0 +1,22 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { @apply h-full overflow-hidden; }
+
+main { @apply flex flex-col h-full; }
+
+article { @apply card p-4 rounded-xl; }
+article header { @apply card-header py-6; }
+article footer { @apply card-footer flex flex-row justify-between py-4; }
+
+button { @apply btn; }
+
+form { @apply space-y-4; }
+form input { @apply input py-2 px-4; }
+form textarea { @apply textarea py-2 px-4; }
+
+.modal-backdrop {
+   @apply overflow-hidden;
+}
